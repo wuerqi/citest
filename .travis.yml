@@ -1,0 +1,27 @@
+os:
+  - osx
+
+sudo: required
+
+language: cpp
+compiler:
+  - gcc
+  - clang
+
+env:
+  global:
+  - NUM_THREADS=4
+
+before_install:
+  - source ./scripts/travis/default.sh
+
+install:
+  - sudo -E ./scripts/travis/install-3rdparty.sh
+
+before_script:
+  - ./scripts/travis/configure.sh
+
+script:
+  - ./scripts/travis/build.sh
+  - ./scripts/travis/test.sh
+
