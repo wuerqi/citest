@@ -3,6 +3,8 @@
 //
 #include <iostream>
 
+#include "library.h"
+
 #include <gtest/gtest.h>
 
 int FooTest(int n)
@@ -11,6 +13,12 @@ int FooTest(int n)
     return -1;
   }
   return 0;
+}
+
+int foo(int a, int b)
+{
+  hello();
+  return Add(a, b);
 }
 
 // Tests factorial of 0.
