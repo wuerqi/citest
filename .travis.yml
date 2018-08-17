@@ -13,7 +13,7 @@ env:
   - NUM_THREADS=4
 
 before_install:
-  - source ./scripts/travis/default.sh
+  - source ./scripts/travis/defaults.sh
 
 install:
   - sudo -E ./scripts/travis/install-3rdparty.sh
