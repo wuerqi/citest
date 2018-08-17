@@ -16,7 +16,7 @@ before_install:
   - source ./scripts/travis/defaults.sh
 
 install:
-  - sudo -E ./scripts/travis/install-3rdparty.sh
+  - sudo -E ./scripts/travis/install_3rdparty.sh
 
 before_script:
   - ./scripts/travis/configure.sh
